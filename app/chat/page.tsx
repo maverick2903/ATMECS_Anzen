@@ -69,7 +69,7 @@ export default function Component() {
 
     const newMessage = { role: 'user' as const, content: input }
     if (fileInputRef.current?.files?.length) {
-      newMessage.file = fileInputRef.current.files[0].name
+      (newMessage as { role: 'user', content: string, file?: string }).file = fileInputRef.current.files[0].name;
     }
     const newMessages = [...messages, newMessage]
     setMessages(newMessages)
