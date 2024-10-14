@@ -29,7 +29,7 @@ interface NewsItem {
     };
     relatedTickers?: string[];
   }
-  
+  // @ts-ignore
   interface YoutubeVideo {
     youtube: string;
   }
