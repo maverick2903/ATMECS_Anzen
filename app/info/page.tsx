@@ -30,16 +30,16 @@ interface NewsItem {
     relatedTickers?: string[];
   }
 
-  interface YoutubeVideo {
-    youtube: string[];
-  }
+//   interface YoutubeVideo {
+//     youtube: string[];
+//   }
   export default function StockInfo() {
     const backend_url = "https://6b96-35-227-172-243.ngrok-free.app"
     const [summary, setSummary] = useState("");
     const [ticker, setTicker] = useState('');
     const [showInfo, setShowInfo] = useState(false);
     const [newsData, setNewsData] = useState<NewsItem[]>([]);
-    const [youtubeData, setYoutubeData] = useState<YoutubeVideo[]>([]);
+    // const [youtubeData, setYoutubeData] = useState<YoutubeVideo[]>([]);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState<string | null>(null);
     const [isHovered, setIsHovered] = useState(false);
@@ -73,8 +73,8 @@ interface NewsItem {
           body: JSON.stringify({ text: `${ticker} stock` }),
         });
 
-        const dataYoutube = await responseYoutube.json();
-        setYoutubeData(dataYoutube.youtube);
+        // const dataYoutube = await responseYoutube.json();
+        // setYoutubeData(dataYoutube.youtube);
 
       } catch (err) {
         setError('Error fetching news/ youtube data');
@@ -220,13 +220,12 @@ interface NewsItem {
               
               <div>
                     <h3 className="text-2xl mb-4">Related Videos</h3>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                         {youtubeData.map((videoId, index) => (
                         <div 
                             key={index} 
                             className="relative overflow-hidden rounded-lg shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
                         >
-                            {/* YouTube Video */}
                             <YouTube 
                             videoId={videoId} 
                             opts={opts} 
@@ -234,7 +233,6 @@ interface NewsItem {
                             className="w-full h-48 sm:h-64 md:h-40 lg:h-56"
                             />
 
-                            {/* Hover Overlay */}
                             <div className="absolute inset-0 bg-black bg-opacity-25 opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                             <a 
                                 href={`https://www.youtube.com/watch?v=${videoId}`} 
@@ -247,7 +245,7 @@ interface NewsItem {
                             </div>
                         </div>
                         ))}
-                    </div>
+                    </div> */}
                     </div>
 
             </div>
