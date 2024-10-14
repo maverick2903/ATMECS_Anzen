@@ -29,9 +29,9 @@ interface NewsItem {
     };
     relatedTickers?: string[];
   }
-  // @ts-ignore
+
   interface YoutubeVideo {
-    youtube: string;
+    youtube: string[];
   }
   export default function StockInfo() {
     const backend_url = "https://6b96-35-227-172-243.ngrok-free.app"
