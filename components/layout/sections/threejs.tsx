@@ -10,6 +10,7 @@ function Model() {
 
   useFrame((state) => {
     if (modelRef.current) {
+        // @ts-ignore
       modelRef.current.rotation.y += 0.002
     }
   })

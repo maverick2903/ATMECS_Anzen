@@ -167,8 +167,10 @@ export default function Component() {
 
     if (fileInputRef.current) fileInputRef.current.value = ''
 
-    const updatedMessages = [...newMessages, aiResponse]
+    const updatedMessages = [...newMessages, aiResponse].filter(Boolean); 
+    // @ts-ignore
     setMessages(updatedMessages)
+    // @ts-ignore
     updateChatHistory(updatedMessages)
   }
 
