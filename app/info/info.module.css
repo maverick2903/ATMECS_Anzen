@@ -1,0 +1,30 @@
+
+
+@keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  .scrollContainer {
+    overflow: hidden;
+    height: 26rem;
+  }
+  
+  .scrollContent {
+    display: flex;
+    animation: scroll 30s linear infinite;
+    &:hover {
+      animation-play-state: paused;
+    }
+  }
+
+  
+  .newsCard {
+    flex-shrink: 0;
+    width: 18rem;
+    margin-right: 1rem;
+  }
