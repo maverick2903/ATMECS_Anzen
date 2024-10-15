@@ -1,56 +1,64 @@
-# Shadcn Landing Page Template
+# Anzen - AI-Driven Financial Insights Product
 
-## <a href="https://ui.shadcn.com/" target="_blank">Shadcn</a> + <a href="https://nextjs.org/" target="_blank">Next.js</a> + <a href="https://www.typescriptlang.org/" target="_blank">TypeScript</a> + <a href="https://tailwindcss.com/" target="_blank">Tailwind</a>.
+Anzen is an AI-powered financial insights platform that leverages Retrieval-Augmented Generation (RAG) and Large Language Models (LLMs) to provide dynamic and up-to-date financial news and data. The product features a globe rendered using 3D models, offering a visually engaging landing page experience. This repository contains the code for the Anzen web app, built using Next.js with TypeScript.
 
-### This is a project conversion <a href="https://github.com/leoMirandaa/shadcn-vue-landing-page" target="_blank">Shadcn-Vue</a> to NextJS
-
-![Alt text](frontend/public/demo-img.jpg)
-
-## Sections
-
-- [x] Navbar
-- [x] Sidebar(mobile)
-- [x] Hero
-- [x] Sponsors
-- [x] Benefits
-- [x] Features
-- [x] Testimonials
-- [x] Team
-- [x] Community
-- [x] Contact
-- [x] Pricing
-- [x] Frequently Asked Questions(FAQ)
-- [x] Services
-- [x] Footer
+## Demo Video
+Watch the full demo on YouTube: [![Anzen Demo](https://img.youtube.com/vi/q4aatJOJMj0/0.jpg)](https://www.youtube.com/watch?v=q4aatJOJMj0)
 
 ## Features
 
-- [x] Fully Responsive Design
-- [x] User Friendly Navigation
-- [x] Dark Mode
+- **AI-Driven Insights**: Integrates RAG and LLMs to deliver real-time financial data and news.
+- **3D Globe Model**: The landing page hero section includes a dynamic, interactive 3D globe built with Three.js and GLTF models.
+- **API Integration**: Fetches financial news based on ticker symbols using a custom-built API.
+- **Custom Audio Recording**: Users can record audio as part of the interaction on the platform.
+- **Responsive Design**: The application is optimized for performance across different devices.
 
-## How to install
+## Screenshots
 
-1. Clone this repositoy:
+### Landing Page
+![Landing Page](./mnt/data/landing.png)
 
-```bash
-git clone https://github.com/nobruf/shadcn-landing-page.git
+### Features Overview
+![Features Overview](./mnt/data/features.png)
+
+### Insightful Data Charts
+![Data Charts](./mnt/data/image-chart.png)
+
+## How to Run the Project
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/your-username/anzen-ai-financial-insights.git
+   cd anzen-ai-financial-insights
+   ```
+   
+2. **Install Dependencies:**
+   Make sure you have Node.js installed. Then run:
+ ``` bash
+  npm install
 ```
 
-2. Go into project
+3. **Run the Development Server:**
+   To start the Next.js development server, run:
+
+  ```bash
+  npm run dev
+ ```
+4. **Server**:
+   Run Atmecs.ipynb in ./backend
+   
+6. **Access the App:**
+   Once the server is running, you can access the app at:
 
 ```bash
-cd shadcn-landing-page
+http://localhost:3000
 ```
 
-3. Install dependencies
+## Tech Stack
+**Framework:** Next.js
+**Language:** TypeScript
+**3D Model Rendering:** Three.js
+**Audio:** Whisper
+**Backend:** FastAPI
 
-```bash
-npm install
-```
 
-4. Run project
-
-```bash
-npm run dev
-```
