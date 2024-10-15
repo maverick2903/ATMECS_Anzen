@@ -5,7 +5,7 @@ import { OrbitControls, useGLTF, Environment } from '@react-three/drei'
 import * as THREE from 'three'
 
 function Model() {
-  const { scene } = useGLTF('/3dfile/a_windy_day/scene.gltf')
+  const { scene } = useGLTF('/3dfile/a_windy_day/model.glb')
   const modelRef = useRef()
 
   useFrame((state) => {
@@ -39,4 +39,4 @@ export function Scene() {
   )
 }
 
-useGLTF.preload('/3dfile/a_windy_day/scene.gltf')
+useGLTF.preload('/3dfile/a_windy_day/model.glb')
