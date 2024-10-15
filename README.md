@@ -3,7 +3,10 @@
 Anzen is an AI-powered financial insights platform that leverages Retrieval-Augmented Generation (RAG) and Large Language Models (LLMs) to provide dynamic and up-to-date financial news and data. The product features a globe rendered using 3D models, offering a visually engaging landing page experience. This repository contains the code for the Anzen web app, built using Next.js with TypeScript.
 
 ## Demo Video
-Watch the full demo on YouTube: [![Anzen Demo](https://img.youtube.com/vi/q4aatJOJMj0/0.jpg)](https://www.youtube.com/watch?v=q4aatJOJMj0)
+Watch the full demo on YouTube: 
+
+[![Anzen Demo](https://github.com/user-attachments/assets/da873d6b-94ca-4877-ae4e-c606bfa54dbd)](https://www.youtube.com/watch?v=q4aatJOJMj0)
+
 
 ## Features
 
@@ -16,21 +19,27 @@ Watch the full demo on YouTube: [![Anzen Demo](https://img.youtube.com/vi/q4aatJ
 ## Screenshots
 
 ### Landing Page
-![Landing Page](./mnt/data/landing.png)
+![landing](https://github.com/user-attachments/assets/d9cf208d-00e1-4ab6-b202-9a083148576c)
 
 ### Features Overview
-![Features Overview](./mnt/data/features.png)
+![features](https://github.com/user-attachments/assets/336727bf-b2fc-4baa-9b1f-9ed168afacef)
 
-### Insightful Data Charts
-![Data Charts](./mnt/data/image-chart.png)
+
+### Insightful Chart Question Answering
+![image-chart](https://github.com/user-attachments/assets/1c2a75c9-af12-4bdf-b274-188ef41aaef6)
+
+### AI Summary of Web Scraped Articles
+![ai_summary](https://github.com/user-attachments/assets/2cdbed4e-b123-4ea2-b54b-9885ba27474e)
+
+
 
 ## How to Run the Project
 
 1. **Clone the Repository**:
-   ```bash
+ ```bash
    git clone https://github.com/your-username/anzen-ai-financial-insights.git
    cd anzen-ai-financial-insights
-   ```
+ ```
    
 2. **Install Dependencies:**
    Make sure you have Node.js installed. Then run:
@@ -45,6 +54,7 @@ Watch the full demo on YouTube: [![Anzen Demo](https://img.youtube.com/vi/q4aatJ
   npm run dev
  ```
 4. **Server**:
+   
    Run Atmecs.ipynb in ./backend
    
 6. **Access the App:**
