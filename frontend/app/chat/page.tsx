@@ -355,6 +355,7 @@ export default function Component() {
   };
   
   // Make sure the audioBlob is only submitted after `onstop` is triggered
+  // @ts-ignore
   const submitAudio = async (audioBlob) => {
     if (!audioBlob) {
       console.log('No audio to submit');
