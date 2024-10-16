@@ -30,9 +30,9 @@ interface NewsItem {
   relatedTickers?: string[];
 }
 
-interface YoutubeVideo {
-  youtube: string;
-}
+// interface YoutubeVideo {
+//   youtube: string;
+// }
 
 export default function StockInfo() {
   const backend_url = "https://de7a-35-231-183-6.ngrok-free.app"
@@ -40,7 +40,7 @@ export default function StockInfo() {
   const [ticker, setTicker] = useState('');
   const [showInfo, setShowInfo] = useState(false);
   const [newsData, setNewsData] = useState<NewsItem[]>([]);
-  const [youtubeData, setYoutubeData] = useState<YoutubeVideo[]>([]);
+  const [youtubeData, setYoutubeData] = useState<string[]>([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [isHovered, setIsHovered] = useState(false);
