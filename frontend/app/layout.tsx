@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 import { Navbar } from "@/components/layout/navbar";
 import { ThemeProvider } from "@/components/layout/theme-provider";
 const inter = Inter({ subsets: ["latin"] });
+import { Analytics } from '@vercel/analytics/react';
 
 export const metadata: Metadata = {
   title: "Anzen Insights",
@@ -28,6 +29,7 @@ export default function RootLayout({
           <Navbar />
 
           {children}
+          <Analytics />
         </ThemeProvider>
       </body>
     </html>
