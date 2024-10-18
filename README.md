@@ -66,9 +66,11 @@ http://localhost:3000
 
 ## Tech Stack
 **Framework:** Next.js
-**Language:** TypeScript
+
+**Language:** TypeScript & Python
+
 **3D Model Rendering:** Three.js
+
 **Audio:** Whisper
+
 **Backend:** FastAPI
-
-
